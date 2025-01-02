@@ -8,6 +8,8 @@ function MyApp(){
     <div>
     <h1>MyApp</h1>
     </div>
+   
+   
   )
 }
 
@@ -38,3 +40,5 @@ createRoot(document.getElementById('root')).render(
     reactElement2
   
 )
+
+export default App

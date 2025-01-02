@@ -16,7 +16,7 @@ function App() {
     <>
       <div className='bg-gray-500 text-yellow-300 p-4 rounded-2xl mb-5'>Hello Tailwind</div>
       {/* /*<Card  channel='mychannel' obj={my_obj}/> */}
-      <Card obj={my_obj} name='John'/>
+      <Card arr name='John'/>
     </>
   )
 }
