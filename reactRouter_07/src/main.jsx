@@ -10,7 +10,7 @@ import Contact from './components/contact/Contact.jsx'
 import User from './components/user/User.jsx'
 import Github, { githubInfoLoader } from './components/github/Github.jsx'
 // we re not going to use <App/>. We will use router provider
-// 2 ways tocreate router
+// 2 ways to create router
 
 // method-1
 // const router = createBrowserRouter([
