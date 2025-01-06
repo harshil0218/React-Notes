@@ -1,6 +1,6 @@
 import { useState } from "react";
 import InputBox from "./components/InputBox.jsx";
-import useCurrencyInfo  from "./hooks/useCurrencyInfo.js";
+import useCurrencyInfo from "./hooks/useCurrencyInfo.js";
 import "./App.css";
 
 function App() {
@@ -37,20 +37,21 @@ function App() {
             onSubmit={(e) => {
               // not reflect in url
               e.preventDefault();
-              convert()
+              convert();
             }}
           >
             <div className="w-full mb-1">
-              <InputBox label="From"
-                        amount = {amount}
-                        currencyOptions={options}
-                        onCurrencyChange={(currency)=>{
-                          setAmount(amount)
-                        }}
-                        selectCurrency={from}
-                        onAmountChnage={(amount)=>{
-                          setAmount(amount)
-                        }}
+              <InputBox
+                label="From"
+                amount={amount}
+                currencyOptions={options}
+                onCurrencyChange={(currency) => {
+                  setAmount(amount);
+                }}
+                selectCurrency={from}
+                onAmountChnage={(amount) => {
+                  setAmount(amount);
+                }}
               />
             </div>
             <div className="relative w-full h-0.5">
@@ -59,18 +60,19 @@ function App() {
                 className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
                 onClick={swap}
               >
-                Swap               
+                Swap
               </button>
             </div>
             <div className="w-full mt-1 mb-4">
-              <InputBox label="To"                   
-                        amount = {result}
-                        currencyOptions={options}
-                        onCurrencyChange={(currency)=>{
-                          setTo(currency)
-                        }}
-                        selectCurrency={to}
-                        amountDisable
+              <InputBox
+                label="To"
+                amount={result}
+                currencyOptions={options}
+                onCurrencyChange={(currency) => {
+                  setTo(currency);
+                }}
+                selectCurrency={to}
+                amountDisable
               />
             </div>
             <button

@@ -7,6 +7,7 @@ import {TodoForm,TodoItem} from "./components/index";
 function App() {
   const [todos, setTodos] = useState([]);
 
+  // automatically update method at todo provider
   const addTodo = (todo) => {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
   };

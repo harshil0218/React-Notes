@@ -13,7 +13,7 @@ function InputBox({
 }) {
    
     // useId is a React Hook for generating unique IDs that can be passed to accessibility attributes.
-    // we will binf=d it with label and input id used for optimization.
+    // we will bind it with label and input id used for optimization.
     const amountInputId = useId()
 
     return (

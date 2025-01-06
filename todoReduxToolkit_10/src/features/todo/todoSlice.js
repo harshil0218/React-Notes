@@ -11,7 +11,7 @@ const todoSlice = createSlice({
         // state give current state and action gives data
         addTodo : (state,action) => {
             const todo ={
-                // create uniqte id
+                // create unique id
                 id : nanoid(),
                 // fetching data from payload object
                 text : action.payload 

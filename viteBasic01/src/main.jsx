@@ -8,8 +8,6 @@ function MyApp(){
     <div>
     <h1>MyApp</h1>
     </div>
-   
-   
   )
 }
 
